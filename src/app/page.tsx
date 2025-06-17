@@ -1,6 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
-import GoalList from "./goals/GoalList";
-import GoalForm from "./goals/GoalForm";
+
 
 export default function Home() {
   const [goals, setGoals] = useState([]);
@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Goal Tracker</h1>
-      <GoalForm setGoals={setGoals} />
-      <GoalList goals={goals} />
+      <p className="mb-4">Welcome to your goal tracker! Here you can view and manage your goals.</p>
+      <div className="space-y-4"/>
     </div>
   );
 }
